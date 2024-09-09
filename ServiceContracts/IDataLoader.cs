@@ -1,6 +1,8 @@
-﻿namespace PetsAlone.ServiceContracts
+﻿using PetsAlone.Models;
+
+namespace PetsAlone.ServiceContracts;
+
+public interface IDataLoader
 {
-    public interface IDataLoader
-    {
-    }
+    Task<List<Pet>> LoadPetsAsync();
 }
